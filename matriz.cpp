@@ -20,7 +20,17 @@ int main(){
             cin >> b[i][j];
         }
     }
-    
+    char operacao;
+    cin >> operacao;
+
+    // essa é a parte da soma.
+    if (operacao == a)[
+        for (int i = 0; i < n; i++){
+            for (int j = 0; j < n; j++){
+                resultado[i][j] = a[i][j] + b[i][j];
+            }
+        }
+    ]
     
     return 0;
 }
