@@ -6,6 +6,8 @@ int main(){
     int n;
     cin >> n;
 
+    int maior = -1000000;
+
     for (int i = 0; i < n; i++){
         int x;
         cin >> x;
@@ -13,8 +15,5 @@ int main(){
             maior = x;
         }
     }
-    
-    
-    
     return 0;
 }
