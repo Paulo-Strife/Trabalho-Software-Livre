@@ -1,15 +1,27 @@
 CXX = g++
-CXXFLAGS = -Wall -Wextra
+CXXFLAGS = -Wall -O2
 
-SRCS = matriz.cpp primo.cpp vetor.cpp
-EXES = $(SRCS:.cpp=)
+BINARIOS = primo matriz matriz_op
 
-.PHONY: all clean
+all: $(BINARIOS)
 
-all: $(EXES)
+primo: primo.cpp
+	$(CXX) $(CXXFLAGS) -o primo primo.cpp
 
-%: %.cpp
-	$(CXX) $(CXXFLAGS) -o $@ $<
+matriz: matriz.cpp
+	$(CXX) $(CXXFLAGS) -o matriz matriz.cpp
+
+matriz_op: matriz_op.cpp
+	$(CXX) $(CXXFLAGS) -o matriz_op matriz_op.cpp
+
+run-primo: primo
+	./primo
+
+run-matriz: matriz
+	./matriz
+
+run-matriz-op: matriz_op
+	./matriz_op
 
 clean:
-	-rm -f $(EXES)
+	rm -f $(BINARIOS)
