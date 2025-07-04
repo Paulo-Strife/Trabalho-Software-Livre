@@ -49,4 +49,8 @@ O Makefile também foi bem difícil de fazer, junto com os programas de testes e
 
 Foi um trabalho divertido e desafiador pra mim, muito por conta da minha falta de experiência com a plataforma, entretando, foi crucial para que eu aprendesse pelo menos o básico do github, pois sei que mais tarde será uma ferramenta crucial na minha formação como estudante, assim como na minha carreira dentro da área da computação.
 
+#3 Observações
+
+Fiquei com receio de dar merge e ferrar com meu diretório, então deixei separado em branchs, não sei se tem problema, tentei dar merge em um outro diretório que eu tenho e não deu muito certo se é que me entende.....
+
 
